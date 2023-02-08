@@ -1,5 +1,5 @@
 {
-  "name": "tech-blog",
+  "name": "PrivateTechBlog",
   "version": "1.0.0",
   "description": "## Your Task",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cokamuro/tech-blog.git"
+    "url": "git@github.com:cridder/PrivateTechBlog.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cokamuro/tech-blog/issues"
+    "url": "https://github.com/cridder/PrivateTechBlog/issues"
   },
-  "homepage": "https://github.com/cokamuro/tech-blog#readme",
+  "homepage": "https://github.com/cridder/PrivateTechBlog/blob/main/README.md",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.4",
