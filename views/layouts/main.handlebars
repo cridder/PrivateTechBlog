@@ -4,48 +4,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Blog of Tech</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-  <header class="col-12 p-3 bg-dark text-white">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <p class="h2 align-items-left mb-2 mb-lg-0 text-white text-decoration-none">
-          The Tech Blog &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </p>
-
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
-          {{#if loggedIn}}
-          <li><a href="/dashboard" class="nav-link px-2 text-white">Dashboard</a></li>
-          {{/if}}
-        </ul>
-
-        <div class="text-end">
-          {{#if loggedIn}}
-          <button type="button" class="tbcreatepost btn btn-warning">Create Post</button>
-          <button type="button" class="logout btn btn-outline-light me-2">Logout</button>
-          {{else}}
-          <button type="button" class="login btn btn-outline-light me-2">Login</button>
-          <button type="button" class="signup btn btn-outline-light me-2">Sign-up</button>
-          {{/if}}
-        </div>
+  <div class="jumbotron">
+    <h1>Blog of Tech</h1>
+  </div>
+  <header>
+    <div>
+      <div>{{#if loggedIn}}
+        <button type="button" class="tbhome btn btn-dark" href="/">Home</button>
+        <button type="button" class="tbcreatepost btn btn-dark">Create Post</button>
+        <button type="button" class="logout btn btn-dark">Logout</button>
+        <button type="button" class="btn btn-dark" href="/dashboard">Dashboard</button>
+        {{else}}
+        <button type="button" class="btn btn-dark" href="/">Home</button>
+        <button type="button" class="login btn btn-dark">Login</button>
+        <button type="button" class="signup btn btn-dark">Sign-up</button>
+        {{/if}}
       </div>
     </div>
   </header>
-
   <main>
-    <div class="body row">
+    <div>
       {{{body}}}
     </div>
   </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    </body>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
 <script src="/js/logout.js"></script>
 
 </html>
