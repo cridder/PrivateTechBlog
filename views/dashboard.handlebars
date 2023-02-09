@@ -1,6 +1,6 @@
 {{#if posts.length}}
     {{#each posts as |post|}}
-    <div class="card col-11 m-4 p-1">
+    <div class="card">
         <div class="card-title d-flex justify-content-between p-2 h4">
             <p class="h2">{{post.title}}</p>
             <a href="/dashboard/post/{{id}}"><img src="/images/edit.png" alt="edit"></a>
@@ -9,7 +9,7 @@
     </div>
     {{/each}}
 {{else}}
-    <div class="card col-11 m-4 p-1">
+    <div class="card">
         <div class="card-title d-flex justify-content-between p-2 h4">
             <p class="h2">There are no posts</p>
         </div>

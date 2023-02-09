@@ -1,10 +1,10 @@
-<div class="col-12 p-4">
+<div>
     <h4>Title</h4>
     <textarea class="w-100" name="title" id="title" cols="1" rows="1">{{post.title}}</textarea>
     <h4>Post</h4>
     <textarea class="w-100" name="content" id="content" cols="30" rows="5">{{post.content}}</textarea>
     <div class="btn-group w-100">
-        {{#if newPost}}
+        {{#if postNew}}
         <button class="btn btn btn-dark" id="tbcreatepost">Create Post</button>
         <button class="btn btn btn-dark" id="cancelPost">Cancel</button>
         {{else}}
@@ -13,7 +13,7 @@
         {{/if}}
     </div>
 </div>
-{{#if newPost}}
+{{#if postNew}}
 <script src="../js/post.js"></script>
 {{else}}
 <script src="../../js/post.js"></script>
