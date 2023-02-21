@@ -15,15 +15,32 @@
   </div>
   <header>
     <div>
-      <div>{{#if loggedIn}}
-        <button type="button" class="tbhome btn btn-dark" href="/">Home</button>
-        <button type="button" class="tbcreatepost btn btn-dark">Create Post</button>
-        <button type="button" class="logout btn btn-dark">Logout</button>
-        <button type="button" class="btn btn-dark" href="/dashboard">Dashboard</button>
+      <div>
+        {{#if loggedIn}}
+        {{!-- <button type="button" class="tbhome btn btn-dark" href="/">Home</button> --}}
+        <a href="/" class="tbhome btn btn-default">Home</a>
+        
+        {{!-- <button type="button" class="tbcreatepost btn btn-dark">Create Post</button> --}}
+        <a class="tbcreatepost btn btn-default">Create Post</a>
+
+        {{!-- <button type="button" class="btn btn-dark" href="/dashboard">Dashboard</button> --}}
+        <a href="/dashboard" class="btn btn-default">Dashboard</a>
+
+        {{!-- <button type="button" class="logout btn btn-dark">Logout</button> --}}
+        <a class="logout btn btn-default">Logout</a>
+
+
         {{else}}
-        <button type="button" class="btn btn-dark" href="/">Home</button>
-        <button type="button" class="login btn btn-dark">Login</button>
-        <button type="button" class="signup btn btn-dark">Sign-up</button>
+
+        {{!-- <button type="button" class="tbhome btn btn-dark" href="/">Home</button> --}}
+        <a href="/" class="tbhome btn btn-default">Home</a>
+
+        {{!-- <button type="button" class="login btn btn-dark">Login</button> --}}
+        <a class="login btn btn-default">Login</a>
+
+        {{!-- <button type="button" class="signup btn btn-dark">Sign-up</button> --}}
+        <a class="signup btn btn-default">Sign-up</a>
+
         {{/if}}
       </div>
     </div>

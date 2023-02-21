@@ -3,7 +3,8 @@
     <div class="card">
         <div class="card-title d-flex justify-content-between p-2 h4">
             <p class="h2">{{post.title}}</p>
-            <a href="/dashboard/post/{{id}}"><img src="/images/edit.png" alt="edit"></a>
+            {{!-- <a href="/dashboard/post/{{id}}"><img src="/images/edit.png" alt="edit"></a> --}}
+            <a href="/dashboard/post/{{id}}" class="btn btn-default">Edit Post</a>
         </div>
         <div>{{content}}</div>
     </div>
